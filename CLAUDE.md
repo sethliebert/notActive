@@ -4,16 +4,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A personal "master" workspace that will hold multiple independent projects side by side — a mix of personal experiments and work projects — under one git history. The tree is currently empty except for this file. Older code (a Python `leagueApp`) still lives in history and can be restored with `git show <sha>:<path>` (see `git log --oneline` for the relevant commits).
+A personal "master" workspace that will hold multiple independent projects side by side — a mix of personal experiments and work projects — under one git history. The tree is currently empty except for this file; treat it as a fresh start.
 
 ## Layout convention
 
 One project per top-level directory, named after the project:
 
 ```
-./leagueApp/
 ./work-acme-dashboard/
 ./scratch-graph-ideas/
+./some-personal-project/
 ```
 
 - Nothing substantive lives at the repo root. Root holds only this `CLAUDE.md`, a top-level `README.md` if added, and shared config the user explicitly places here.
@@ -25,9 +25,7 @@ One project per top-level directory, named after the project:
 
 _Add one bullet per project as it lands; keep details in the project's own README._
 
-<!--
-- `leagueApp/` — Python. League of Legends helper. (recoverable from history)
--->
+_(no projects yet)_
 
 ## Working here
 
@@ -38,8 +36,8 @@ _Add one bullet per project as it lands; keep details in the project's own READM
 ## Branches and commits
 
 - Default branch: `master`.
-- Branch names scoped to a project: `leagueApp/add-champion-filter`, `work-foo/fix-login`. Claude-initiated branches may use the `claude/<topic>-<id>` form.
-- Commit subjects prefixed with the project directory when project-specific: `leagueApp: add champion filter`.
+- Branch names scoped to a project: `work-foo/fix-login`, `scratch-graph-ideas/try-force-layout`. Claude-initiated branches may use the `claude/<topic>-<id>` form.
+- Commit subjects prefixed with the project directory when project-specific: `work-foo: fix login redirect`.
 
 ## Keeping this file short
 
